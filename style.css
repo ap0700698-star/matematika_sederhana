@@ -479,3 +479,349 @@ tbody tr:hover td { background: var(--surface); color: var(--txt); }
   .grid3 { grid-template-columns: 1fr; }
   .op-grid { grid-template-columns: 1fr 1fr; }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Nunito:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg: #fffaf5;
+  --bg2: #fffdfb;
+  --bg3: #ffe8d6;
+  --surface: #fff7ee;
+  --surface2: #ffe7cb;
+  --border: #ffd7b5;
+  --border2: #f7b66a;
+
+  --txt: #3b2d29;
+  --txt2: #7a5b4c;
+  --txt3: #a77d68;
+
+  --blue: #5aa9ff;
+  --blue-dim: #eaf4ff;
+  --green: #48c77a;
+  --green-dim: #e9fbf1;
+  --yellow: #f4c95d;
+  --yellow-dim: #fff4cc;
+  --red: #ff7a7a;
+  --red-dim: #ffe4e4;
+  --purple: #a48aff;
+  --purple-dim: #f0ebff;
+  --orange: #ff9f6e;
+  --orange-dim: #fff0e6;
+  --teal: #5ec7d6;
+  --teal-dim: #ebfbff;
+
+  --shadow: 0 14px 32px rgba(255, 166, 98, 0.18);
+  --glow-blue: 0 0 0 6px rgba(90,169,255,.12);
+}
+
+body {
+  background: linear-gradient(180deg, #fffaf5 0%, #fff4ea 100%);
+  color: var(--txt);
+  font-family: 'Nunito', sans-serif;
+}
+
+.nav,
+.card,
+.class-card,
+.sb-row,
+.modal,
+.question-box,
+.profile-hero,
+.admin-stat,
+.mult-card,
+.power-card,
+.login-wrap .card,
+#page-login .card {
+  box-shadow: var(--shadow);
+}
+
+.nav {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(247, 182, 106, 0.35);
+}
+
+.nav-brand,
+.login-logo,
+.home-welcome,
+.class-card-name,
+.section-title,
+.profile-name,
+.q-op-label,
+.q-text,
+.admin-stat-val {
+  font-family: 'Baloo 2', 'Nunito', sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.btn {
+  border-radius: 999px;
+  box-shadow: 0 8px 18px rgba(107, 132, 255, 0.14);
+  font-weight: 800;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #6bb5ff, #5aa9ff);
+}
+
+.btn-success {
+  background: linear-gradient(135deg, #70d995, #48c77a);
+}
+
+.btn-danger {
+  background: linear-gradient(135deg, #ff8d8d, #ff7a7a);
+}
+
+.btn-ghost {
+  background: #fff;
+  border: 1.5px solid var(--border);
+  color: var(--txt2);
+}
+
+.card,
+.class-card,
+.sb-row,
+.modal,
+.question-box,
+.admin-stat,
+.mult-card,
+.power-card,
+.profile-hero {
+  border: 1.5px solid rgba(247, 182, 106, 0.4);
+  border-radius: 22px;
+}
+
+#page-login {
+  background: radial-gradient(circle at top left, #fff5d9 0%, #ffe4cc 24%, #fffaf5 64%, #fffaf5 100%);
+}
+
+.login-wrap {
+  max-width: 430px;
+}
+
+.login-logo {
+  font-size: 44px;
+  color: var(--txt);
+}
+
+.login-logo span,
+.nav-brand span {
+  color: var(--blue);
+}
+
+.login-sub {
+  font-size: 15px;
+  color: var(--txt2);
+  font-weight: 700;
+}
+
+#login-form,
+#register-form {
+  background: rgba(255,255,255,0.6);
+  border: 1px solid rgba(247,182,106,0.35);
+  border-radius: 24px;
+  padding: 18px;
+}
+
+.inp {
+  background: #fff;
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  color: var(--txt);
+  box-shadow: inset 0 1px 2px rgba(116,91,75,0.04);
+}
+
+.inp:focus,
+.inp-lg:focus {
+  border-color: var(--blue);
+  box-shadow: var(--glow-blue), inset 0 1px 2px rgba(116,91,75,0.04);
+}
+
+.class-card {
+  padding: 18px 18px 16px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.92), rgba(255,244,232,0.9));
+}
+
+.class-card:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 18px 30px rgba(255, 166, 98, 0.18);
+}
+
+.class-card-icon {
+  font-size: 36px;
+  filter: drop-shadow(0 6px 12px rgba(255, 166, 98, 0.2));
+}
+
+.class-card-score,
+.home-welcome,
+.q-text,
+.profile-stat-val,
+.admin-stat-val {
+  color: var(--txt);
+}
+
+.section-title {
+  color: var(--txt2);
+  font-size: 14px;
+}
+
+.op-card {
+  background: linear-gradient(180deg, #ffffff 0%, #fff7f0 100%);
+  border-radius: 18px;
+  border: 1.5px solid rgba(247, 182, 106, 0.35);
+}
+
+.op-card.active {
+  box-shadow: 0 0 0 4px rgba(90,169,255,.12);
+}
+
+.game-header {
+  background: rgba(255,255,255,0.78);
+  border-bottom: 1px solid rgba(247,182,106,0.28);
+}
+
+.game-chip {
+  background: #fff;
+  border: 1px solid rgba(247,182,106,0.25);
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(247,182,106,0.08);
+}
+
+.question-box {
+  background: linear-gradient(180deg, #fff 0%, #fff8ef 100%);
+}
+
+.result-strip {
+  border-radius: 14px;
+  font-weight: 800;
+}
+
+.result-correct {
+  background: linear-gradient(180deg, #ebfff0, #dff9e7);
+}
+
+.result-wrong {
+  background: linear-gradient(180deg, #fff0f0, #ffe7e7);
+}
+
+.profile-hero {
+  background: linear-gradient(135deg, #fffaf4 0%, #f7ecff 100%);
+}
+
+.profile-hero::before {
+  background: linear-gradient(135deg, rgba(90,169,255,0.15), rgba(164,138,255,0.2));
+}
+
+.profile-avatar {
+  border-width: 4px;
+  border-color: var(--orange);
+  box-shadow: 0 8px 20px rgba(255,159,110,0.2);
+}
+
+.avatar-edit {
+  background: linear-gradient(135deg, #ffb86a, #ff8e65);
+  border: 2px solid #fff;
+}
+
+.badge {
+  border-radius: 999px;
+  font-weight: 800;
+}
+
+.sb-row {
+  background: linear-gradient(180deg, #fffefb 0%, #fff8f0 100%);
+}
+
+.sb-row.is-me {
+  background: linear-gradient(180deg, #edf6ff 0%, #eaf5ff 100%);
+}
+
+.tab {
+  border-radius: 14px;
+  font-weight: 800;
+}
+
+.tab.active {
+  background: linear-gradient(180deg, #fff, #fff3df);
+  color: var(--txt);
+  box-shadow: 0 8px 14px rgba(255, 166, 98, 0.12);
+}
+
+.progress {
+  height: 10px;
+  background: #f7e6d3;
+}
+
+.progress-fill {
+  background: linear-gradient(90deg, #6cc3ff 0%, #77d7a8 100%);
+}
+
+.mult-card {
+  background: linear-gradient(180deg, #fff, #fff7f0);
+}
+
+.power-card {
+  background: linear-gradient(180deg, #fff, #fffaf6);
+}
+
+.activity-row {
+  border: 1px solid rgba(247,182,106,0.2);
+  background: #fffaf4;
+}
+
+.empty-state {
+  font-weight: 700;
+}
+
+@media (max-width: 640px) {
+  .nav {
+    padding: 0 14px;
+  }
+
+  .game-header {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .q-text {
+    font-size: 42px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
